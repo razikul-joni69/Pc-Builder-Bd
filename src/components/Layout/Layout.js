@@ -1,9 +1,10 @@
 import logo from '@/assets/images/logo.jpg';
+import { signOut, useSession } from 'next-auth/react';
 import Image from "next/image";
 import Link from "next/link";
 
 const Layout = ({ children }) => {
-    const user = false;
+    const { data: session } = useSession();
     return (
         <div data-theme="light">
 
@@ -26,7 +27,7 @@ const Layout = ({ children }) => {
                         </ul>
                     </div>
                     <Link href="/" className='flex'>
-                        <Image src={logo} width={50} height={50} className="rounded-xl"></Image>
+                        <Image src={logo} width={50} height={50} className="rounded-xl" alt='logo'></Image>
                         <span className="btn btn-ghost normal-case text-xl invisible md:visible">PC Builder BD</span>
                     </Link>
                 </div>
@@ -53,7 +54,7 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="navbar-end">
                     {
-                        user ? <>
+                        session?.user?.email ? <>
                             <button className="btn btn-ghost btn-circle">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                             </button>
@@ -77,7 +78,7 @@ const Layout = ({ children }) => {
                             <div className="dropdown dropdown-end">
                                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
-                                        <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                        <img src={session?.user?.image ? session?.user?.image : "https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"} />
                                     </div>
                                 </label>
                                 <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
@@ -87,8 +88,8 @@ const Layout = ({ children }) => {
                                             <span className="badge">New</span>
                                         </a>
                                     </li>
-                                    <li><a>Settings</a></li>
-                                    <li><a>Logout</a></li>
+                                    <li><a>{session?.user?.name}</a></li>
+                                    <li><button className='btn-warning' onClick={() => signOut()}>Logout</button></li>
                                 </ul>
                             </div>
                         </>
@@ -106,7 +107,7 @@ const Layout = ({ children }) => {
             <footer>
                 <div className="footer p-10 bg-base-200 text-base-content">
                     <div>
-                        <Image src={logo} width={60} height={60}></Image>
+                        <Image src={logo} width={60} height={60} alt='logo'></Image>
                         <p className="footer-title">PC Builder BD<br />Providing reliable pc service since 2001</p>
                     </div>
                     <div>
@@ -138,7 +139,7 @@ const Layout = ({ children }) => {
                 </div>
                 <div className="footer items-center p-4 bg-neutral text-neutral-content">
                     <div className="items-center grid-flow-col">
-                        <Image src={logo} width={40} height={40}></Image>
+                        <Image src={logo} width={40} height={40} alt='logo'></Image>
                         <p>Copyright © 2023 - razikul.joni69</p>
                     </div>
                     <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">

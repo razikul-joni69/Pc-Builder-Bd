@@ -2,7 +2,7 @@
     "processors": [
         {
             "_id": "1",
-            "img": "https://example.com/processor1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Processor Model X",
             "category": "Computer Processors",
             "status": "In Stock",
@@ -41,7 +41,7 @@
         },
         {
             "_id": "2",
-            "img": "https://example.com/processor2.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Processor Model Y",
             "category": "Computer Processors",
             "status": "Out of Stock",
@@ -75,7 +75,7 @@
         },
         {
             "_id": "3",
-            "img": "https://example.com/processor3.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Processor Model Z",
             "category": "Computer Processors",
             "status": "In Stock",
@@ -109,7 +109,7 @@
         },
         {
             "_id": "4",
-            "img": "https://example.com/processor4.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Processor Model A",
             "category": "Computer Processors",
             "status": "In Stock",
@@ -143,7 +143,7 @@
         },
         {
             "_id": "5",
-            "img": "https://example.com/processor5.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Processor Model B",
             "category": "Computer Processors",
             "status": "In Stock",
@@ -179,7 +179,7 @@
     "motherboards": [
         {
             "_id": "1",
-            "img": "https://example.com/motherboard1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Motherboard Model X",
             "category": "Motherboards",
             "status": "In Stock",
@@ -217,7 +217,7 @@
         },
         {
             "_id": "2",
-            "img": "https://example.com/motherboard2.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Motherboard Model Y",
             "category": "Motherboards",
             "status": "Out of Stock",
@@ -255,7 +255,7 @@
         },
         {
             "_id": "3",
-            "img": "https://example.com/motherboard3.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Motherboard Model Z",
             "category": "Motherboards",
             "status": "In Stock",
@@ -293,7 +293,7 @@
         },
         {
             "_id": "4",
-            "img": "https://example.com/motherboard4.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Motherboard Model A",
             "category": "Motherboards",
             "status": "In Stock",
@@ -333,7 +333,7 @@
     "rams": [
         {
             "_id": "1",
-            "img": "https://example.com/ram1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "RAM Model X",
             "category": "RAM",
             "status": "In Stock",
@@ -367,7 +367,7 @@
         },
         {
             "_id": "2",
-            "img": "https://example.com/ram2.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "RAM Model Y",
             "category": "RAM",
             "status": "Out of Stock",
@@ -401,7 +401,7 @@
         },
         {
             "_id": "3",
-            "img": "https://example.com/ram3.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "RAM Model Z",
             "category": "RAM",
             "status": "In Stock",
@@ -435,7 +435,7 @@
         },
         {
             "_id": "4",
-            "img": "https://example.com/ram4.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "RAM Model A",
             "category": "RAM",
             "status": "In Stock",
@@ -471,7 +471,7 @@
     "powerSupplies": [
         {
             "_id": "1",
-            "img": "https://example.com/powersupply1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Power Supply Model X",
             "category": "Power Supplies",
             "status": "In Stock",
@@ -505,7 +505,7 @@
         },
         {
             "_id": "2",
-            "img": "https://example.com/powersupply2.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Power Supply Model Y",
             "category": "Power Supplies",
             "status": "Out of Stock",
@@ -539,7 +539,7 @@
         },
         {
             "_id": "3",
-            "img": "https://example.com/powersupply3.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Power Supply Model Z",
             "category": "Power Supplies",
             "status": "In Stock",
@@ -573,7 +573,7 @@
         },
         {
             "_id": "4",
-            "img": "https://example.com/powersupply4.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Power Supply Model A",
             "category": "Power Supplies",
             "status": "In Stock",
@@ -609,7 +609,7 @@
     "storageDevices": [
         {
             "_id": "1",
-            "img": "https://example.com/storage1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "SSD Model X",
             "category": "Storage Devices",
             "status": "In Stock",
@@ -644,7 +644,7 @@
         },
         {
             "_id": "2",
-            "img": "https://example.com/storage2.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "HDD Model Y",
             "category": "Storage Devices",
             "status": "Out of Stock",
@@ -677,7 +677,7 @@
         },
         {
             "_id": "3",
-            "img": "https://example.com/storage3.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "SSD Model Z",
             "category": "Storage Devices",
             "status": "In Stock",
@@ -712,7 +712,7 @@
         },
         {
             "_id": "4",
-            "img": "https://example.com/storage4.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "HDD Model A",
             "category": "Storage Devices",
             "status": "In Stock",
@@ -747,7 +747,7 @@
     "monitors": [
         {
             "_id": "1",
-            "img": "https://example.com/monitor1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Monitor Model X",
             "category": "Monitors",
             "status": "In Stock",
@@ -783,7 +783,7 @@
         },
         {
             "_id": "2",
-            "img": "https://example.com/monitor2.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Monitor Model Y",
             "category": "Monitors",
             "status": "Out of Stock",
@@ -819,7 +819,7 @@
         },
         {
             "_id": "3",
-            "img": "https://example.com/monitor3.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Monitor Model Z",
             "category": "Monitors",
             "status": "In Stock",
@@ -855,7 +855,7 @@
         },
         {
             "_id": "4",
-            "img": "https://example.com/monitor4.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Monitor Model A",
             "category": "Monitors",
             "status": "In Stock",
@@ -893,7 +893,7 @@
     "accessories": [
         {
             "_id": "1",
-            "img": "https://example.com/gpu1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "GPU Model X",
             "category": "Graphics Cards",
             "status": "In Stock",
@@ -928,7 +928,7 @@
         },
         {
             "_id": "2",
-            "img": "https://example.com/mouse1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Gaming Mouse Model Y",
             "category": "Mice",
             "status": "In Stock",
@@ -962,7 +962,7 @@
         },
         {
             "_id": "3",
-            "img": "https://example.com/keyboard1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Mechanical Keyboard Model Z",
             "category": "Keyboards",
             "status": "In Stock",
@@ -995,7 +995,7 @@
         },
         {
             "_id": "4",
-            "img": "https://example.com/headset1.jpg",
+            "img": "https://dummyimage.com/500x600",
             "name": "Gaming Headset Model A",
             "category": "Headsets",
             "status": "In Stock",

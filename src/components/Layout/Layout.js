@@ -6,8 +6,7 @@ import Link from "next/link";
 const Layout = ({ children }) => {
     const { data: session } = useSession();
     return (
-        <div data-theme="light">
-
+        <div data-theme="dark">
             <div className="navbar backdrop-blur-xl sticky top-0 z-50 md:container md:mx-auto border-b-2">
                 <div className="navbar-start">
                     <div className="dropdown">

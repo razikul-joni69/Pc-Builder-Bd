@@ -1,0 +1,1030 @@
+{
+    "processors": [
+        {
+            "_id": "1",
+            "img": "https://example.com/processor1.jpg",
+            "name": "Processor Model X",
+            "category": "Computer Processors",
+            "status": "In Stock",
+            "price": 299.99,
+            "description": "The Processor Model X is a high-performance processor designed for gaming and intensive tasks.",
+            "features": {
+                "Brand": "BrandX",
+                "Model": "Model X",
+                "Specification": "Quad-core, 4.0 GHz",
+                "Port": "Socket AM4",
+                "Type": "Desktop",
+                "Voltage": "1.35V",
+                "Cache": "8MB",
+                "TDP": "95W"
+            },
+            "rating": 4.8,
+            "total_ratings": 150,
+            "average_rating": 4.8,
+            "reviews": [
+                {
+                    "username": "User123",
+                    "rating": 5,
+                    "comment": "This processor is amazing! It handles everything I throw at it with ease."
+                },
+                {
+                    "username": "GamerGirl87",
+                    "rating": 4.5,
+                    "comment": "Great performance for gaming, but a bit pricey."
+                },
+                {
+                    "username": "TechGeek22",
+                    "rating": 4,
+                    "comment": "Solid processor, but I wish it had more cores."
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "img": "https://example.com/processor2.jpg",
+            "name": "Processor Model Y",
+            "category": "Computer Processors",
+            "status": "Out of Stock",
+            "price": 199.95,
+            "description": "The Processor Model Y is a budget-friendly processor ideal for everyday computing tasks.",
+            "features": {
+                "Brand": "BrandY",
+                "Model": "Model Y",
+                "Specification": "Dual-core, 3.5 GHz",
+                "Port": "Socket LGA1151",
+                "Type": "Desktop",
+                "Voltage": "1.25V",
+                "Cache": "4MB",
+                "TDP": "65W"
+            },
+            "rating": 4.2,
+            "total_ratings": 80,
+            "average_rating": 4.2,
+            "reviews": [
+                {
+                    "username": "EverydayUser",
+                    "rating": 4,
+                    "comment": "A decent processor for everyday tasks. No complaints."
+                },
+                {
+                    "username": "BudgetBuyer",
+                    "rating": 4.5,
+                    "comment": "Good value for the price."
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "img": "https://example.com/processor3.jpg",
+            "name": "Processor Model Z",
+            "category": "Computer Processors",
+            "status": "In Stock",
+            "price": 499.0,
+            "description": "The Processor Model Z is a high-end processor for professionals and content creators.",
+            "features": {
+                "Brand": "BrandZ",
+                "Model": "Model Z",
+                "Specification": "Octa-core, 4.5 GHz",
+                "Port": "Socket TR4",
+                "Type": "Workstation",
+                "Voltage": "1.4V",
+                "Cache": "16MB",
+                "TDP": "180W"
+            },
+            "rating": 4.9,
+            "total_ratings": 250,
+            "average_rating": 4.9,
+            "reviews": [
+                {
+                    "username": "ProfessionalDesigner",
+                    "rating": 5,
+                    "comment": "Unmatched performance for 3D rendering and video editing!"
+                },
+                {
+                    "username": "ContentCreator23",
+                    "rating": 4.8,
+                    "comment": "Handles heavy multitasking like a champ."
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "img": "https://example.com/processor4.jpg",
+            "name": "Processor Model A",
+            "category": "Computer Processors",
+            "status": "In Stock",
+            "price": 129.99,
+            "description": "The Processor Model A is a budget processor for entry-level users.",
+            "features": {
+                "Brand": "BrandA",
+                "Model": "Model A",
+                "Specification": "Dual-core, 3.0 GHz",
+                "Port": "Socket FM2+",
+                "Type": "Desktop",
+                "Voltage": "1.2V",
+                "Cache": "2MB",
+                "TDP": "45W"
+            },
+            "rating": 3.5,
+            "total_ratings": 40,
+            "average_rating": 3.5,
+            "reviews": [
+                {
+                    "username": "NewUser2023",
+                    "rating": 3,
+                    "comment": "Decent processor for basic tasks, but not suitable for heavy usage."
+                },
+                {
+                    "username": "BudgetGamer",
+                    "rating": 4,
+                    "comment": "Can run most games at low settings, good for the price."
+                }
+            ]
+        },
+        {
+            "_id": "5",
+            "img": "https://example.com/processor5.jpg",
+            "name": "Processor Model B",
+            "category": "Computer Processors",
+            "status": "In Stock",
+            "price": 249.95,
+            "description": "The Processor Model B is a mid-range processor with a balance of performance and affordability.",
+            "features": {
+                "Brand": "BrandB",
+                "Model": "Model B",
+                "Specification": "Hexa-core, 3.8 GHz",
+                "Port": "Socket AM4",
+                "Type": "Desktop",
+                "Voltage": "1.35V",
+                "Cache": "6MB",
+                "TDP": "95W"
+            },
+            "rating": 4.6,
+            "total_ratings": 120,
+            "average_rating": 4.6,
+            "reviews": [
+                {
+                    "username": "MidRangeUser",
+                    "rating": 5,
+                    "comment": "Impressive performance for both gaming and productivity tasks."
+                },
+                {
+                    "username": "TechEnthusiast",
+                    "rating": 4.5,
+                    "comment": "A solid processor for most users, but can get hot under heavy loads."
+                }
+            ]
+        }
+    ],
+    "motherboards": [
+        {
+            "_id": "1",
+            "img": "https://example.com/motherboard1.jpg",
+            "name": "Motherboard Model X",
+            "category": "Motherboards",
+            "status": "In Stock",
+            "price": 189.99,
+            "description": "The Motherboard Model X is a high-end motherboard with excellent overclocking capabilities.",
+            "features": {
+                "Brand": "BrandX",
+                "Model": "Model X",
+                "Socket": "Socket AM4",
+                "Form Factor": "ATX",
+                "Memory Slots": "4",
+                "Max Memory": "64GB",
+                "Expansion Slots": "2 x PCIe 3.0 x16, 3 x PCIe 3.0 x1",
+                "Storage": "6 x SATA, 2 x M.2",
+                "USB Ports": "8 x USB 3.1, 6 x USB 2.0",
+                "Networking": "Gigabit Ethernet",
+                "Audio": "Realtek ALC1220",
+                "Wi-Fi": "Wi-Fi 6 (802.11ax)"
+            },
+            "rating": 4.9,
+            "total_ratings": 200,
+            "average_rating": 4.9,
+            "reviews": [
+                {
+                    "username": "EnthusiastGamer",
+                    "rating": 5,
+                    "comment": "This motherboard is a beast! Perfect for my gaming rig."
+                },
+                {
+                    "username": "OverclockMaster",
+                    "rating": 4.8,
+                    "comment": "Easily overclocked my CPU without any issues."
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "img": "https://example.com/motherboard2.jpg",
+            "name": "Motherboard Model Y",
+            "category": "Motherboards",
+            "status": "Out of Stock",
+            "price": 119.95,
+            "description": "The Motherboard Model Y is a budget-friendly motherboard for entry-level systems.",
+            "features": {
+                "Brand": "BrandY",
+                "Model": "Model Y",
+                "Socket": "Socket LGA1200",
+                "Form Factor": "Micro-ATX",
+                "Memory Slots": "2",
+                "Max Memory": "32GB",
+                "Expansion Slots": "1 x PCIe 3.0 x16, 2 x PCIe 3.0 x1",
+                "Storage": "4 x SATA, 1 x M.2",
+                "USB Ports": "6 x USB 3.2, 4 x USB 2.0",
+                "Networking": "Gigabit Ethernet",
+                "Audio": "Realtek ALC887",
+                "Wi-Fi": "None"
+            },
+            "rating": 4.2,
+            "total_ratings": 80,
+            "average_rating": 4.2,
+            "reviews": [
+                {
+                    "username": "BudgetBuilder",
+                    "rating": 4,
+                    "comment": "Decent motherboard for the price, but lacks Wi-Fi."
+                },
+                {
+                    "username": "EntryLevelUser",
+                    "rating": 4.5,
+                    "comment": "A good choice for a basic office PC."
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "img": "https://example.com/motherboard3.jpg",
+            "name": "Motherboard Model Z",
+            "category": "Motherboards",
+            "status": "In Stock",
+            "price": 249.0,
+            "description": "The Motherboard Model Z is a premium motherboard with advanced features for enthusiasts.",
+            "features": {
+                "Brand": "BrandZ",
+                "Model": "Model Z",
+                "Socket": "Socket LGA1700",
+                "Form Factor": "ATX",
+                "Memory Slots": "4",
+                "Max Memory": "128GB",
+                "Expansion Slots": "3 x PCIe 4.0 x16, 2 x PCIe 3.0 x1",
+                "Storage": "8 x SATA, 3 x M.2",
+                "USB Ports": "10 x USB 3.2, 4 x USB 2.0",
+                "Networking": "2.5 Gigabit Ethernet",
+                "Audio": "Realtek ALC4082",
+                "Wi-Fi": "Wi-Fi 6E (802.11ax)"
+            },
+            "rating": 4.7,
+            "total_ratings": 150,
+            "average_rating": 4.7,
+            "reviews": [
+                {
+                    "username": "TechEnthusiast2023",
+                    "rating": 5,
+                    "comment": "One of the best motherboards I've ever used! Worth every penny."
+                },
+                {
+                    "username": "PCBuilderPro",
+                    "rating": 4.5,
+                    "comment": "Great for heavy multitasking and high-performance tasks."
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "img": "https://example.com/motherboard4.jpg",
+            "name": "Motherboard Model A",
+            "category": "Motherboards",
+            "status": "In Stock",
+            "price": 79.99,
+            "description": "The Motherboard Model A is a basic motherboard suitable for general computing needs.",
+            "features": {
+                "Brand": "BrandA",
+                "Model": "Model A",
+                "Socket": "Socket AM4",
+                "Form Factor": "Micro-ATX",
+                "Memory Slots": "2",
+                "Max Memory": "32GB",
+                "Expansion Slots": "1 x PCIe 3.0 x16, 2 x PCIe 2.0 x1",
+                "Storage": "4 x SATA, 1 x M.2",
+                "USB Ports": "6 x USB 3.1, 6 x USB 2.0",
+                "Networking": "Gigabit Ethernet",
+                "Audio": "Realtek ALC887",
+                "Wi-Fi": "None"
+            },
+            "rating": 3.8,
+            "total_ratings": 40,
+            "average_rating": 3.8,
+            "reviews": [
+                {
+                    "username": "GeneralUser",
+                    "rating": 3.5,
+                    "comment": "It does the job for basic tasks, but I wish it had more expansion slots."
+                },
+                {
+                    "username": "BudgetBuyer",
+                    "rating": 4,
+                    "comment": "Affordable motherboard for a simple build."
+                }
+            ]
+        }
+    ],
+    "rams": [
+        {
+            "_id": "1",
+            "img": "https://example.com/ram1.jpg",
+            "name": "RAM Model X",
+            "category": "RAM",
+            "status": "In Stock",
+            "price": 79.99,
+            "description": "The RAM Model X is a high-performance memory module for gaming and multitasking.",
+            "features": {
+                "Brand": "BrandX",
+                "Capacity": "16GB",
+                "Speed": "3200MHz",
+                "Type": "DDR4",
+                "CAS Latency": "16",
+                "Voltage": "1.35V",
+                "ECC": "Non-ECC",
+                "Heat Spreader": "Yes"
+            },
+            "rating": 4.8,
+            "total_ratings": 100,
+            "average_rating": 4.8,
+            "reviews": [
+                {
+                    "username": "Gamer123",
+                    "rating": 5,
+                    "comment": "This RAM improved my gaming performance significantly!"
+                },
+                {
+                    "username": "MultitaskerGuy",
+                    "rating": 4.5,
+                    "comment": "Handles multiple applications without any lag."
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "img": "https://example.com/ram2.jpg",
+            "name": "RAM Model Y",
+            "category": "RAM",
+            "status": "Out of Stock",
+            "price": 59.95,
+            "description": "The RAM Model Y is a budget-friendly memory module for general computing.",
+            "features": {
+                "Brand": "BrandY",
+                "Capacity": "8GB",
+                "Speed": "2666MHz",
+                "Type": "DDR4",
+                "CAS Latency": "19",
+                "Voltage": "1.2V",
+                "ECC": "Non-ECC",
+                "Heat Spreader": "No"
+            },
+            "rating": 4.2,
+            "total_ratings": 50,
+            "average_rating": 4.2,
+            "reviews": [
+                {
+                    "username": "BudgetUser",
+                    "rating": 4,
+                    "comment": "Decent RAM for everyday tasks, but not ideal for heavy usage."
+                },
+                {
+                    "username": "OfficeWorker",
+                    "rating": 4.5,
+                    "comment": "Suits my office PC needs perfectly."
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "img": "https://example.com/ram3.jpg",
+            "name": "RAM Model Z",
+            "category": "RAM",
+            "status": "In Stock",
+            "price": 149.0,
+            "description": "The RAM Model Z is a high-capacity memory module for content creation and video editing.",
+            "features": {
+                "Brand": "BrandZ",
+                "Capacity": "32GB",
+                "Speed": "3600MHz",
+                "Type": "DDR4",
+                "CAS Latency": "18",
+                "Voltage": "1.4V",
+                "ECC": "Non-ECC",
+                "Heat Spreader": "Yes"
+            },
+            "rating": 4.7,
+            "total_ratings": 80,
+            "average_rating": 4.7,
+            "reviews": [
+                {
+                    "username": "ContentCreatorPro",
+                    "rating": 5,
+                    "comment": "This RAM is a beast! It makes editing 4K videos a breeze."
+                },
+                {
+                    "username": "DesignMaster",
+                    "rating": 4.5,
+                    "comment": "Fast and reliable RAM for my creative work."
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "img": "https://example.com/ram4.jpg",
+            "name": "RAM Model A",
+            "category": "RAM",
+            "status": "In Stock",
+            "price": 39.99,
+            "description": "The RAM Model A is a value-oriented memory module for budget-conscious users.",
+            "features": {
+                "Brand": "BrandA",
+                "Capacity": "4GB",
+                "Speed": "2400MHz",
+                "Type": "DDR4",
+                "CAS Latency": "17",
+                "Voltage": "1.2V",
+                "ECC": "Non-ECC",
+                "Heat Spreader": "No"
+            },
+            "rating": 3.8,
+            "total_ratings": 30,
+            "average_rating": 3.8,
+            "reviews": [
+                {
+                    "username": "BasicUser",
+                    "rating": 3.5,
+                    "comment": "A basic RAM stick, but don't expect blazing speeds."
+                },
+                {
+                    "username": "OldPCUpgrade",
+                    "rating": 4,
+                    "comment": "It improved my old PC's performance slightly."
+                }
+            ]
+        }
+    ],
+    "powerSupplies": [
+        {
+            "_id": "1",
+            "img": "https://example.com/powersupply1.jpg",
+            "name": "Power Supply Model X",
+            "category": "Power Supplies",
+            "status": "In Stock",
+            "price": 99.99,
+            "description": "The Power Supply Model X is a reliable and efficient PSU for mid-range systems.",
+            "features": {
+                "Brand": "BrandX",
+                "Wattage": "650W",
+                "Efficiency": "80 Plus Bronze",
+                "Modular": "Semi-Modular",
+                "Connectors": "ATX, EPS, PCIe, SATA, Molex",
+                "Overload Protection": "Yes",
+                "Fan": "120mm",
+                "Active PFC": "Yes"
+            },
+            "rating": 4.7,
+            "total_ratings": 150,
+            "average_rating": 4.7,
+            "reviews": [
+                {
+                    "username": "GamerGuy",
+                    "rating": 5,
+                    "comment": "This power supply has been rock solid for my gaming rig."
+                },
+                {
+                    "username": "TechEnthusiast",
+                    "rating": 4.5,
+                    "comment": "The semi-modular design keeps cable management neat and tidy."
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "img": "https://example.com/powersupply2.jpg",
+            "name": "Power Supply Model Y",
+            "category": "Power Supplies",
+            "status": "Out of Stock",
+            "price": 129.95,
+            "description": "The Power Supply Model Y is a high-end PSU with advanced safety features.",
+            "features": {
+                "Brand": "BrandY",
+                "Wattage": "850W",
+                "Efficiency": "80 Plus Gold",
+                "Modular": "Fully Modular",
+                "Connectors": "ATX, EPS, PCIe, SATA, Molex",
+                "Overload Protection": "Yes",
+                "Fan": "140mm",
+                "Active PFC": "Yes"
+            },
+            "rating": 4.9,
+            "total_ratings": 200,
+            "average_rating": 4.9,
+            "reviews": [
+                {
+                    "username": "PCBuilderPro",
+                    "rating": 5,
+                    "comment": "This PSU is a beast! It handles my overclocked components flawlessly."
+                },
+                {
+                    "username": "ProGamer123",
+                    "rating": 4.8,
+                    "comment": "The fully modular design made cable management a breeze."
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "img": "https://example.com/powersupply3.jpg",
+            "name": "Power Supply Model Z",
+            "category": "Power Supplies",
+            "status": "In Stock",
+            "price": 79.0,
+            "description": "The Power Supply Model Z is a budget-friendly PSU for entry-level builds.",
+            "features": {
+                "Brand": "BrandZ",
+                "Wattage": "500W",
+                "Efficiency": "80 Plus White",
+                "Modular": "Non-Modular",
+                "Connectors": "ATX, EPS, PCIe, SATA, Molex",
+                "Overload Protection": "Yes",
+                "Fan": "80mm",
+                "Active PFC": "Yes"
+            },
+            "rating": 4.2,
+            "total_ratings": 80,
+            "average_rating": 4.2,
+            "reviews": [
+                {
+                    "username": "BudgetBuilder",
+                    "rating": 4,
+                    "comment": "A good power supply for the price, but cable management is a bit messy."
+                },
+                {
+                    "username": "NewUser2023",
+                    "rating": 4.5,
+                    "comment": "Perfect for my first PC build. No complaints so far."
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "img": "https://example.com/powersupply4.jpg",
+            "name": "Power Supply Model A",
+            "category": "Power Supplies",
+            "status": "In Stock",
+            "price": 49.99,
+            "description": "The Power Supply Model A is a compact PSU suitable for small form factor PCs.",
+            "features": {
+                "Brand": "BrandA",
+                "Wattage": "400W",
+                "Efficiency": "80 Plus Bronze",
+                "Modular": "Non-Modular",
+                "Connectors": "ATX, EPS, PCIe, SATA, Molex",
+                "Overload Protection": "Yes",
+                "Fan": "80mm",
+                "Active PFC": "Yes"
+            },
+            "rating": 3.8,
+            "total_ratings": 60,
+            "average_rating": 3.8,
+            "reviews": [
+                {
+                    "username": "SmallPCBuilder",
+                    "rating": 3.5,
+                    "comment": "It fits perfectly in my mini-ITX case, but it can get a bit noisy under load."
+                },
+                {
+                    "username": "LightGamer",
+                    "rating": 4,
+                    "comment": "Decent power supply for a low-power gaming setup."
+                }
+            ]
+        }
+    ],
+    "storageDevices": [
+        {
+            "_id": "1",
+            "img": "https://example.com/storage1.jpg",
+            "name": "SSD Model X",
+            "category": "Storage Devices",
+            "status": "In Stock",
+            "price": 99.99,
+            "description": "The SSD Model X offers blazing-fast performance for rapid data access and boot times.",
+            "features": {
+                "Brand": "BrandX",
+                "Capacity": "500GB",
+                "Interface": "NVMe PCIe Gen4",
+                "Read Speed": "3500 MB/s",
+                "Write Speed": "2500 MB/s",
+                "Form Factor": "M.2 2280",
+                "Endurance": "500 TBW",
+                "NAND Flash Type": "3D NAND",
+                "Encryption": "AES 256-bit"
+            },
+            "rating": 4.8,
+            "total_ratings": 150,
+            "average_rating": 4.8,
+            "reviews": [
+                {
+                    "username": "SpeedDemon",
+                    "rating": 5,
+                    "comment": "This SSD is insanely fast! My PC boots up in seconds."
+                },
+                {
+                    "username": "DataHoarder",
+                    "rating": 4.5,
+                    "comment": "Great value for the capacity and performance."
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "img": "https://example.com/storage2.jpg",
+            "name": "HDD Model Y",
+            "category": "Storage Devices",
+            "status": "Out of Stock",
+            "price": 79.95,
+            "description": "The HDD Model Y offers high-capacity storage for large media libraries and backups.",
+            "features": {
+                "Brand": "BrandY",
+                "Capacity": "2TB",
+                "Interface": "SATA 6Gb/s",
+                "RPM": "7200",
+                "Form Factor": "3.5-inch",
+                "Cache": "64MB",
+                "Power Consumption": "6.8W (Active), 5.5W (Idle)"
+            },
+            "rating": 4.2,
+            "total_ratings": 100,
+            "average_rating": 4.2,
+            "reviews": [
+                {
+                    "username": "MediaCollector",
+                    "rating": 4,
+                    "comment": "Massive storage for my video and photo collection."
+                },
+                {
+                    "username": "BackupPro",
+                    "rating": 4.5,
+                    "comment": "Reliable drive for my regular backups."
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "img": "https://example.com/storage3.jpg",
+            "name": "SSD Model Z",
+            "category": "Storage Devices",
+            "status": "In Stock",
+            "price": 149.0,
+            "description": "The SSD Model Z provides high-end performance and durability for professional use.",
+            "features": {
+                "Brand": "BrandZ",
+                "Capacity": "1TB",
+                "Interface": "SATA III",
+                "Read Speed": "560 MB/s",
+                "Write Speed": "520 MB/s",
+                "Form Factor": "2.5-inch",
+                "Endurance": "600 TBW",
+                "NAND Flash Type": "3D TLC",
+                "Encryption": "None"
+            },
+            "rating": 4.7,
+            "total_ratings": 120,
+            "average_rating": 4.7,
+            "reviews": [
+                {
+                    "username": "ProfessionalEditor",
+                    "rating": 5,
+                    "comment": "Fast and reliable storage for my video editing projects."
+                },
+                {
+                    "username": "TechEnthusiast2023",
+                    "rating": 4.5,
+                    "comment": "A solid SSD with good endurance for my heavy workloads."
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "img": "https://example.com/storage4.jpg",
+            "name": "HDD Model A",
+            "category": "Storage Devices",
+            "status": "In Stock",
+            "price": 49.99,
+            "description": "The HDD Model A is a cost-effective storage solution for basic file storage.",
+            "features": {
+                "Brand": "BrandA",
+                "Capacity": "1TB",
+                "Interface": "SATA 6Gb/s",
+                "RPM": "5400",
+                "Form Factor": "2.5-inch",
+                "Cache": "32MB",
+                "Power Consumption": "5.3W (Active), 4.0W (Idle)"
+            },
+            "rating": 3.8,
+            "total_ratings": 80,
+            "average_rating": 3.8,
+            "reviews": [
+                {
+                    "username": "BasicUser",
+                    "rating": 3.5,
+                    "comment": "A decent HDD for everyday file storage, but it's not the fastest."
+                },
+                {
+                    "username": "BudgetBuyer",
+                    "rating": 4,
+                    "comment": "Affordable storage for my laptop."
+                }
+            ]
+        }
+    ],
+    "monitors": [
+        {
+            "_id": "1",
+            "img": "https://example.com/monitor1.jpg",
+            "name": "Monitor Model X",
+            "category": "Monitors",
+            "status": "In Stock",
+            "price": 299.99,
+            "description": "The Monitor Model X is a high-performance gaming monitor with a high refresh rate.",
+            "features": {
+                "Brand": "BrandX",
+                "Size": "27 inches",
+                "Resolution": "2560x1440 (QHD)",
+                "Panel Type": "IPS",
+                "Refresh Rate": "144Hz",
+                "Response Time": "1ms",
+                "Aspect Ratio": "16:9",
+                "Brightness": "350 cd/m²",
+                "Contrast Ratio": "1000:1",
+                "Connectivity": "HDMI, DisplayPort"
+            },
+            "rating": 4.8,
+            "total_ratings": 200,
+            "average_rating": 4.8,
+            "reviews": [
+                {
+                    "username": "Gamer123",
+                    "rating": 5,
+                    "comment": "This monitor is a game-changer! Smooth gameplay and vibrant colors."
+                },
+                {
+                    "username": "TechGeek",
+                    "rating": 4.5,
+                    "comment": "Great for both gaming and productivity tasks."
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "img": "https://example.com/monitor2.jpg",
+            "name": "Monitor Model Y",
+            "category": "Monitors",
+            "status": "Out of Stock",
+            "price": 199.95,
+            "description": "The Monitor Model Y is a budget-friendly monitor with an adjustable stand.",
+            "features": {
+                "Brand": "BrandY",
+                "Size": "24 inches",
+                "Resolution": "1920x1080 (Full HD)",
+                "Panel Type": "VA",
+                "Refresh Rate": "75Hz",
+                "Response Time": "4ms",
+                "Aspect Ratio": "16:9",
+                "Brightness": "250 cd/m²",
+                "Contrast Ratio": "3000:1",
+                "Connectivity": "HDMI, VGA"
+            },
+            "rating": 4.2,
+            "total_ratings": 120,
+            "average_rating": 4.2,
+            "reviews": [
+                {
+                    "username": "BudgetBuyer",
+                    "rating": 4,
+                    "comment": "A good monitor for everyday tasks, but not ideal for gaming."
+                },
+                {
+                    "username": "OfficeWorker",
+                    "rating": 4.5,
+                    "comment": "The adjustable stand is a nice feature for my workspace."
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "img": "https://example.com/monitor3.jpg",
+            "name": "Monitor Model Z",
+            "category": "Monitors",
+            "status": "In Stock",
+            "price": 449.0,
+            "description": "The Monitor Model Z is a professional-grade monitor with color accuracy for content creators.",
+            "features": {
+                "Brand": "BrandZ",
+                "Size": "32 inches",
+                "Resolution": "3840x2160 (4K UHD)",
+                "Panel Type": "IPS",
+                "Refresh Rate": "60Hz",
+                "Response Time": "5ms",
+                "Aspect Ratio": "16:9",
+                "Brightness": "400 cd/m²",
+                "Contrast Ratio": "1200:1",
+                "Connectivity": "HDMI, DisplayPort, USB-C"
+            },
+            "rating": 4.7,
+            "total_ratings": 180,
+            "average_rating": 4.7,
+            "reviews": [
+                {
+                    "username": "ProfessionalDesigner",
+                    "rating": 5,
+                    "comment": "This monitor is a game-changer for my design work! Accurate colors and sharp details."
+                },
+                {
+                    "username": "ContentCreator23",
+                    "rating": 4.5,
+                    "comment": "Great monitor for video editing and graphic design."
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "img": "https://example.com/monitor4.jpg",
+            "name": "Monitor Model A",
+            "category": "Monitors",
+            "status": "In Stock",
+            "price": 149.99,
+            "description": "The Monitor Model A is an entry-level monitor with slim bezels for a seamless look.",
+            "features": {
+                "Brand": "BrandA",
+                "Size": "21.5 inches",
+                "Resolution": "1920x1080 (Full HD)",
+                "Panel Type": "TN",
+                "Refresh Rate": "60Hz",
+                "Response Time": "5ms",
+                "Aspect Ratio": "16:9",
+                "Brightness": "200 cd/m²",
+                "Contrast Ratio": "1000:1",
+                "Connectivity": "HDMI, VGA"
+            },
+            "rating": 3.8,
+            "total_ratings": 80,
+            "average_rating": 3.8,
+            "reviews": [
+                {
+                    "username": "BasicUser",
+                    "rating": 3.5,
+                    "comment": "A budget monitor with average performance."
+                },
+                {
+                    "username": "Student101",
+                    "rating": 4,
+                    "comment": "Perfect for my study setup."
+                }
+            ]
+        }
+    ],
+    "accessories": [
+        {
+            "_id": "1",
+            "img": "https://example.com/gpu1.jpg",
+            "name": "GPU Model X",
+            "category": "Graphics Cards",
+            "status": "In Stock",
+            "price": 699.99,
+            "description": "The GPU Model X delivers top-notch gaming performance and ray tracing capabilities.",
+            "features": {
+                "Brand": "BrandX",
+                "GPU Chipset": "NVIDIA RTX 3080",
+                "Memory": "10GB GDDR6X",
+                "Core Clock": "1750 MHz",
+                "Boost Clock": "1900 MHz",
+                "CUDA Cores": "8704",
+                "Memory Interface": "320-bit",
+                "Power Connectors": "2 x 8-pin",
+                "Outputs": "3 x DisplayPort, 1 x HDMI"
+            },
+            "rating": 4.9,
+            "total_ratings": 250,
+            "average_rating": 4.9,
+            "reviews": [
+                {
+                    "username": "Gamer123",
+                    "rating": 5,
+                    "comment": "This GPU is a beast! Ultra settings in all my games."
+                },
+                {
+                    "username": "TechEnthusiast",
+                    "rating": 4.8,
+                    "comment": "Great for content creation and gaming."
+                }
+            ]
+        },
+        {
+            "_id": "2",
+            "img": "https://example.com/mouse1.jpg",
+            "name": "Gaming Mouse Model Y",
+            "category": "Mice",
+            "status": "In Stock",
+            "price": 49.95,
+            "description": "The Gaming Mouse Model Y offers precision and customization for gaming enthusiasts.",
+            "features": {
+                "Brand": "BrandY",
+                "DPI": "16000",
+                "Sensor Type": "Optical",
+                "Programmable Buttons": "10",
+                "Polling Rate": "1000Hz",
+                "Ergonomics": "Right-handed",
+                "Lighting": "RGB",
+                "Connectivity": "Wired (USB)"
+            },
+            "rating": 4.6,
+            "total_ratings": 180,
+            "average_rating": 4.6,
+            "reviews": [
+                {
+                    "username": "ProGamer99",
+                    "rating": 5,
+                    "comment": "The mouse feels great in my hand, and the DPI settings are very useful."
+                },
+                {
+                    "username": "TechGuru",
+                    "rating": 4.2,
+                    "comment": "A solid gaming mouse, but I wish it had left-handed options."
+                }
+            ]
+        },
+        {
+            "_id": "3",
+            "img": "https://example.com/keyboard1.jpg",
+            "name": "Mechanical Keyboard Model Z",
+            "category": "Keyboards",
+            "status": "In Stock",
+            "price": 129.0,
+            "description": "The Mechanical Keyboard Model Z provides tactile feedback and customizable lighting.",
+            "features": {
+                "Brand": "BrandZ",
+                "Switch Type": "Cherry MX Brown",
+                "Key Rollover": "N-key rollover",
+                "Backlighting": "RGB",
+                "Media Controls": "Dedicated",
+                "Connectivity": "Wired (USB)",
+                "Wrist Rest": "Detachable"
+            },
+            "rating": 4.7,
+            "total_ratings": 210,
+            "average_rating": 4.7,
+            "reviews": [
+                {
+                    "username": "TypingMaster",
+                    "rating": 5,
+                    "comment": "The typing experience is delightful! Love the tactile feel."
+                },
+                {
+                    "username": "GamerAndTypist",
+                    "rating": 4.5,
+                    "comment": "Perfect for gaming and productivity."
+                }
+            ]
+        },
+        {
+            "_id": "4",
+            "img": "https://example.com/headset1.jpg",
+            "name": "Gaming Headset Model A",
+            "category": "Headsets",
+            "status": "In Stock",
+            "price": 79.99,
+            "description": "The Gaming Headset Model A offers immersive sound and a comfortable fit for long gaming sessions.",
+            "features": {
+                "Brand": "BrandA",
+                "Driver Size": "50mm",
+                "Sound Mode": "Stereo",
+                "Microphone": "Noise-canceling, Detachable",
+                "Connectivity": "Wired (3.5mm audio jack, USB for lighting)",
+                "Comfort": "Memory foam ear cushions",
+                "Compatibility": "PC, PS5, Xbox Series X|S"
+            },
+            "rating": 4.3,
+            "total_ratings": 150,
+            "average_rating": 4.3,
+            "reviews": [
+                {
+                    "username": "GamerGuru",
+                    "rating": 4.5,
+                    "comment": "The sound quality is impressive, and the microphone works well."
+                },
+                {
+                    "username": "LongGamingSessions",
+                    "rating": 4,
+                    "comment": "Comfortable to wear for extended gaming hours."
+                }
+            ]
+        }
+    ]
+}

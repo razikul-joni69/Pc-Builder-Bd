@@ -1,4 +1,5 @@
 import { Rating } from "@smastrom/react-rating";
+import Link from "next/link";
 
 const ProductCard = ({ products }) => {
 
@@ -47,17 +48,19 @@ const ProductCard = ({ products }) => {
                             <div className="flex items-center justify-between">
                                 <Rating
                                     style={{ maxWidth: 130 }}
-                                    value={4}
+                                    value={product?.rating}
                                     readOnly
                                 />
                                 <span className="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 -ml-4">
                                     {product?.total_ratings}
                                 </span>
-                                <button
-                                    className={`btn btn-sm btn-primary text-white`}
-                                >
-                                    See Details
-                                </button>
+                                <Link href={`/product/${product?.category}/${product?.name}/${product?._id}`}>
+                                    <button
+                                        className={`btn btn-sm btn-primary text-white`}
+                                    >
+                                        See Details
+                                    </button>
+                                </Link>
                             </div>
                         </div>
                     </div>

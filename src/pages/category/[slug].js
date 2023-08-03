@@ -28,30 +28,11 @@ export const getStaticPaths = async ({ params }) => {
 }
 
 export const getStaticProps = async ({ params }) => {
-    console.log(params);
     const getCategory = params?.slug;
-    console.log(getCategory);
-    let category = ""
-    // if (getCategory === "Computer Processors") {
-    //     category = processors;
-    // } else if (getCategory === "Motherboards") {
-    //     category = motherboards
-    // } else if (getCategory === "RAM") {
-    //     category = rams
-    // } else if (getCategory === "Power Supplies") {
-    //     category = powerSupplies
-    // } else if (getCategory === "Storage Devices") {
-    //     category = storageDevices
-    // } else if (getCategory === "Monitors") {
-    //     category = monitors
-    // } else {
-    //     category = accessories
-    // }
     const res = await fetch('http://localhost:3000/api/products')
     const data = await res.json();
 
     const categorizedProducts = data?.data[getCategory]
-    console.log(categorizedProducts);
 
     return {
         props: {

@@ -1,30 +1,27 @@
-const ProductDetails = () => {
+import Reviews from "@/components/Reviews/Reviews";
+import Title from "@/components/Title/Title";
+import { Rating } from "@smastrom/react-rating";
+
+const ProductDetails = ({ data: product }) => {
     return (
         <section class="text-gray-700 body-font overflow-hidden bg-white">
             <div class="container px-5 py-24 mx-auto">
                 <div class="lg:w-4/5 mx-auto flex flex-wrap">
-                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src="https://www.whitmorerarebooks.com/pictures/medium/2465.jpg" />
+                    <img alt="ecommerce" class="lg:w-1/2 w-full object-cover object-center rounded border border-gray-200" src={product?.img} />
                     <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                        <h2 class="text-sm title-font text-gray-500 tracking-widest">BRAND NAME</h2>
-                        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">The Catcher in the Rye</h1>
+                        <h2 class="text-sm title-font text-gray-500 tracking-widest">{product?.category?.toUpperCase()}</h2>
+                        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">{product?.name}</h1>
+                        <h1 class="text-gray-900 text-3xl title-font font-medium mb-1">${product?.price}</h1>
                         <div class="flex mb-4">
                             <span class="flex items-center">
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-red-500" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-red-500" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-red-500" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-red-500" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 text-red-500" viewBox="0 0 24 24">
-                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                                </svg>
-                                <span class="text-gray-600 ml-3">4 Reviews</span>
+                                <Rating
+                                    style={{ maxWidth: 130 }}
+                                    value={product?.rating}
+                                    readOnly
+                                />
+                                <span className="bg-blue-100 ml-3 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800">
+                                    {product?.total_ratings}
+                                </span>
                             </span>
                             <span class="flex ml-3 pl-3 py-2 border-l-2 border-gray-200">
                                 <a class="text-gray-500">
@@ -44,7 +41,7 @@ const ProductDetails = () => {
                                 </a>
                             </span>
                         </div>
-                        <p class="leading-relaxed">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam indxgo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean shorts keytar banjo tattooed umami cardigan.</p>
+                        <p class="leading-relaxed">{product?.description}</p>
                         <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
                             <div class="flex">
                                 <span class="mr-3">Color</span>
@@ -81,7 +78,37 @@ const ProductDetails = () => {
                     </div>
                 </div>
             </div>
+            <Title title="Reviews" subTitle="See what our customers say"/>
+            <Reviews reviews={product?.reviews} />
         </section>
     );
 };
 export default ProductDetails;
+
+
+
+
+export const getStaticPaths = async () => {
+
+
+    return {
+        paths: [],
+        fallback: false
+    }
+}
+export const getStaticProps = async ({ params }) => {
+    const productId = params?.slug[2]
+    const productCategoriy = params?.slug[0]
+
+    const res = await fetch('http://localhost:3000/api/products')
+    const data = await res.json()
+    const categorizedProduct = data?.data[productCategoriy]
+
+    const product = categorizedProduct.filter(product => product._id === productId)
+
+    return {
+        props: {
+            data: product[0]
+        }
+    }
+}

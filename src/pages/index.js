@@ -1,6 +1,8 @@
 import Contact from '@/components/Contact/Contact'
 import Herosection from '@/components/Herosection/Herosection'
-import ProductCard from '@/components/ProductsCard/ProductCard'
+import ProductDetails from '@/components/ProductDetails/ProductDetails'
+import ProductCard from '@/components/Products/ProductCard'
+import ProductsCategoryCard from '@/components/Products/ProductsCategoryCard'
 import Title from '@/components/Title/Title'
 import { Inter } from 'next/font/google'
 
@@ -14,8 +16,10 @@ const Home = ({ data }) => {
   const powerSupplie = data?.powerSupplies[0]
   const monitor = data?.monitors[0]
   const storageDevices = data?.storageDevices[0]
+  const accessories = data?.accessories[0]
 
   const featuredProducts = [processor, motherboard, ram, powerSupplie, monitor, storageDevices]
+  const featuredCategorys = [processor, motherboard, ram, powerSupplie, monitor, accessories]
 
   return (
     <main
@@ -23,7 +27,10 @@ const Home = ({ data }) => {
     >
       <Herosection />
       <Title title="Featured Products" subTitle="See Our Featured Products" />
-      <ProductCard featuredProducts={featuredProducts} />
+      <ProductCard products={featuredProducts} />
+      <Title title="Featured Categories" subTitle="Our Featured products categories" />
+      <ProductsCategoryCard featuredCategorys={featuredCategorys} />
+      {/* <ProductDetails /> */}
       <Title title="Contact Us" subTitle="Contact with Us. Or come to our office." />
       <Contact />
     </main>

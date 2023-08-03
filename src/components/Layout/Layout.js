@@ -6,7 +6,7 @@ import Link from "next/link";
 const Layout = ({ children }) => {
     const { data: session } = useSession();
     return (
-        <div data-theme="dark">
+        <div data-theme="light">
             <div className="navbar backdrop-blur-xl sticky top-0 z-50 md:container md:mx-auto border-b-2">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -37,14 +37,13 @@ const Layout = ({ children }) => {
                             <details >
                                 <summary>Components</summary>
                                 <ul className="p-2 w-52">
-                                    <li><Link href="/">Submenu 1</Link></li>
-                                    <li><Link href="/">CPU / Processor</Link></li>
-                                    <li><Link href="/"> Motherboard</Link></li>
-                                    <li><Link href="/"> RAM</Link></li>
-                                    <li><Link href="/">Power Supply Unit</Link></li>
-                                    <li><Link href="/"> Storage Device</Link></li>
-                                    <li><Link href="/"> Monitor</Link></li>
-                                    <li><Link href="/">Others</Link></li>
+                                    <li><Link href="/category/processors">CPU / Processor</Link></li>
+                                    <li><Link href="/category/motherboards"> Motherboard</Link></li>
+                                    <li><Link href="/category/rams"> RAM</Link></li>
+                                    <li><Link href="/category/powerSupplies">Power Supply Unit</Link></li>
+                                    <li><Link href="/category/storageDevices"> Storage Device</Link></li>
+                                    <li><Link href="/category/monitors"> Monitors</Link></li>
+                                    <li><Link href="/category/accessories">Accessories</Link></li>
                                 </ul>
                             </details>
                         </li>

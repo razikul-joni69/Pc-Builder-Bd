@@ -4,7 +4,7 @@ const Reviews = ({ reviews }) => {
     return (
         <section class="flex items-center pb-10 font-poppins ">
             <div class="justify-center flex-1 max-w-6xl px-4 py-6 mx-auto lg:py-4 md:px-6">
-                {/* <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <div class="p-6 mb-6 bg-gray-50 dark:bg-gray-900">
                         <h2 class="mb-6 text-xl font-semibold text-left font-gray-600 dark:text-gray-400">
                             Ratings & Reviews</h2>
@@ -93,7 +93,7 @@ const Reviews = ({ reviews }) => {
                                     </svg>
                                 </div>
                                 <div class="w-full h-3 mr-2 bg-gray-200 md:w-80 dark:bg-gray-700">
-                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style="width: 75%"></div>
+                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style={{ width: "75%" }}></div>
                                 </div>
                                 <div class="flex justify-end text-xs font-medium dark:text-gray-400">91% </div>
                             </div>
@@ -109,7 +109,7 @@ const Reviews = ({ reviews }) => {
                                     </svg>
                                 </div>
                                 <div class="w-full h-3 mr-2 bg-gray-200 md:w-80 dark:bg-gray-700">
-                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style="width: 45%"></div>
+                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style={{ width: "45%" }}></div>
                                 </div>
                                 <div class="flex justify-end text-xs font-medium dark:text-gray-400">45% </div>
                             </div>
@@ -125,7 +125,7 @@ const Reviews = ({ reviews }) => {
                                     </svg>
                                 </div>
                                 <div class="w-full h-3 mr-2 bg-gray-200 md:w-80 dark:bg-gray-700">
-                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style="width: 25%"></div>
+                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style={{ width: "25%" }}></div>
                                 </div>
                                 <div class="flex justify-end text-xs font-medium dark:text-gray-400">25% </div>
                             </div>
@@ -141,7 +141,7 @@ const Reviews = ({ reviews }) => {
                                     </svg>
                                 </div>
                                 <div class="w-full h-3 mr-2 bg-gray-200 md:w-80 dark:bg-gray-700">
-                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style="width: 14%"></div>
+                                    <div class="h-3 bg-blue-500 dark:bg-blue-400" style={{ width: "14%" }}></div>
                                 </div>
                                 <div class="flex justify-end text-xs font-medium dark:text-gray-400">14% </div>
                             </div>
@@ -171,8 +171,7 @@ const Reviews = ({ reviews }) => {
                             </div>
                         </form>
                     </div>
-                </div> */}
-
+                </div>
                 {
                     reviews?.map(review => {
                         return <div key={review?.username} class="p-4 bg-white shadow-2xl rounded-xl mb-5">

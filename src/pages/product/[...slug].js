@@ -120,7 +120,7 @@ const ProductDetails = ({ data: product }) => {
                                 <h2 class="mb-2 text-lg font-bold text-gray-700 dark:text-gray-400">Product Description :</h2>
                                 <p>{product?.description}</p>
                             </div>
-                            <div class="mb-6 border-t"></div>
+                            <div class="my-4 border-t"></div>
                             <div class="flex flex-wrap items-center mb-6">
                                 <div class="mb-4 mr-4 lg:mb-0">
                                     <div class="w-28">

@@ -1,7 +1,35 @@
+// import { monitor, motherboard, powerSupplie, processor, ram, storageDevice } from "@/redux/features/components/componentSlice";
+import { monitor, motherboard, powerSupplie, processor, ram, storageDevice } from "@/redux/features/components/componentSlice";
 import { Rating } from "@smastrom/react-rating";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import { useDispatch } from 'react-redux';
 
 const ProductCard = ({ products }) => {
+    const router = useRouter();
+    const pathName = router?.pathname;
+    const dispatch = useDispatch()
+    const productName = router?.query?.product;
+
+    let addProduct;
+    if (productName === "processors") {
+        addProduct = processor;
+    }
+    else if (productName === "motherboards") {
+        addProduct = motherboard;
+    }
+    else if (productName === "rams") {
+        addProduct = ram;
+    }
+    else if (productName === "powerSupplies") {
+        addProduct = powerSupplie;
+    }
+    else if (productName === "storageDevices") {
+        addProduct = storageDevice;
+    }
+    else if (productName === "monitors") {
+        addProduct = monitor;
+    }
 
     return (
         <div className="my-10">
@@ -62,6 +90,18 @@ const ProductCard = ({ products }) => {
                                     </button>
                                 </Link>
                             </div>
+                            {
+                                pathName === '/pc-builder/[product]' &&
+                                <div className="pt-2">
+                                    {
+                                        product?.status === "In Stock" ? <Link href="/pc-builder">
+                                            <button
+                                                onClick={() => dispatch(addProduct({ _id: product?._id, name: product?.name, img: product?.img, price: product?.price, rating: product?.rating }))}
+                                                className="btn btn-info btn-block">Add Component</button>
+                                        </Link> : <button className="btn btn-info btn-block " disabled>Out Of Stock</button>
+                                    }
+                                </div>
+                            }
                         </div>
                     </div>
                 ))}

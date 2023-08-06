@@ -174,52 +174,52 @@ const Reviews = ({ reviews }) => {
                 </div>
                 {
                     reviews?.map(review => {
-                        return <div key={review?.username} class="p-4 bg-white shadow-2xl rounded-xl mb-5">
-                            <div class="flex flex-wrap items-center space-x-2">
-                                <div class="flex  flex-shrink-0 cursor-pointer">
-                                    <img src="https://i.postimg.cc/JzmrHQmk/pexels-pixabay-220453.jpg" alt=""
-                                        class="object-fill w-16 h-16 rounded-full" />
-                                </div>
-                                <div class="flex items-center justify-center space-x-2 ">
-                                    <div class="block">
-                                        <div class="w-auto px-2 pb-2 ">
-                                            <div class="font-medium">
-                                                <a href="#" class="text-lg font-semibold dark:text-gray-400 hover:underline">
-                                                    <small>{review?.username}</small>
-                                                </a>
+                        return (
+                            <div key={review?.username} class="p-4 bg-white shadow-2xl rounded-xl mb-5">
+                                <div class="flex flex-wrap items-center space-x-2">
+                                    <div class="flex  flex-shrink-0 cursor-pointer">
+                                        <img src="https://i.postimg.cc/JzmrHQmk/pexels-pixabay-220453.jpg" alt=""
+                                            class="object-fill w-16 h-16 rounded-full" />
+                                    </div>
+                                    <div class="flex items-center justify-center space-x-2 ">
+                                        <div class="block">
+                                            <div class="w-auto px-2 pb-2 ">
+                                                <div class="font-medium">
+                                                    <a href="#" class="text-lg font-semibold dark:text-gray-400 hover:underline">
+                                                        <small>{review?.username}</small>
+                                                    </a>
+                                                </div>
+                                                <div class="text-sm text-gray-500 dark:text-gray-400">
+                                                    {review?.comment}
+                                                </div>
                                             </div>
-                                            <div class="text-sm text-gray-500 dark:text-gray-400">
-                                                {review?.comment}
+                                            <div>
+                                                <Rating
+                                                    style={{ maxWidth: 130 }}
+                                                    value={review?.rationg}
+                                                    readOnly
+                                                />
                                             </div>
-                                        </div>
-                                        <div>
-                                            <Rating
-                                                style={{ maxWidth: 130 }}
-                                                value={review?.rationg}
-                                                readOnly
-                                            />
-                                        </div>
-                                        <div class="flex items-center justify-start w-full text-xs pt-2">
-                                            <div
-                                                class="flex items-center justify-center px-2 space-x-1 font-semibold text-gray-700 dark:text-gray-400">
-                                                <a href="#" class="hover:underline">
-                                                    <span>Like</span>
-                                                </a>
-                                                <span class="self-center">.</span>
-                                                <a href="#" class="hover:underline">
-                                                    <span>Reply</span>
-                                                </a>
-                                                <span class="self-center">.</span>
-                                                <a href="#" class="hover:underline">
-                                                    <span>{Math.floor(Math.random() * 40 + 20)}m ago</span>
-                                                </a>
+                                            <div class="flex items-center justify-start w-full text-xs pt-2">
+                                                <div
+                                                    class="flex items-center justify-center px-2 space-x-1 font-semibold text-gray-700 dark:text-gray-400">
+                                                    <a href="#" class="hover:underline">
+                                                        <span>Like</span>
+                                                    </a>
+                                                    <span class="self-center">.</span>
+                                                    <a href="#" class="hover:underline">
+                                                        <span>Reply</span>
+                                                    </a>
+                                                    <span class="self-center">.</span>
+                                                    <a href="#" class="hover:underline">
+                                                        <span>{Math.floor(Math.random() * 40 + 20)}m ago</span>
+                                                    </a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-
-                        </div>
+                            </div>)
                     })
                 }
 

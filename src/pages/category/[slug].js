@@ -3,9 +3,13 @@ import Title from "@/components/Title/Title";
 import { useRouter } from "next/router";
 
 const CatagorigedProduct = ({ data }) => {
+    const router = useRouter();
+    const component = router?.query?.slug;
     return (
         <div>
-            <Title title="Catagoriged Product" />
+            <div className="pt-5">
+                <Title title={`All ${component?.toUpperCase()}`} subTitle={`All of available ${component}`} />
+            </div>
             <ProductCard products={data} />
         </div>
     );

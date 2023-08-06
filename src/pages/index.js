@@ -1,6 +1,5 @@
 import Contact from '@/components/Contact/Contact'
 import Herosection from '@/components/Herosection/Herosection'
-import ProductDetails from '@/components/ProductDetails/ProductDetails'
 import ProductCard from '@/components/Products/ProductCard'
 import ProductsCategoryCard from '@/components/Products/ProductsCategoryCard'
 import Title from '@/components/Title/Title'
@@ -9,7 +8,6 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 const Home = ({ data }) => {
-  // const [featuredProducts, setFeaturedProducts] = useState([])
   const processor = data?.processors[0]
   const motherboard = data?.motherboards[0]
   const ram = data?.rams[0]
@@ -26,12 +24,17 @@ const Home = ({ data }) => {
       className={`${inter.className}`}
     >
       <Herosection />
-      <Title title="Featured Products" subTitle="See Our Featured Products" />
+      <div className='pt-5'>
+        <Title title="Featured Products" subTitle="See Our Featured Products" />
+      </div>
       <ProductCard products={featuredProducts} />
-      <Title title="Featured Categories" subTitle="Our Featured products categories" />
+      <div className='pt-10'>
+        <Title title="Featured Categories" subTitle="Our Featured products categories" />
+      </div>
       <ProductsCategoryCard featuredCategorys={featuredCategorys} />
-      {/* <ProductDetails /> */}
-      <Title title="Contact Us" subTitle="Contact with Us. Or come to our office." />
+      <div className='pt-10'>
+        <Title title="Contact Us" subTitle="Contact with Us. Or come to our office." />
+      </div>
       <Contact />
     </main>
   )

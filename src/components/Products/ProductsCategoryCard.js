@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ProductsCategoryCard = ({ featuredCategorys }) => {
     return (
-        <section className="text-gray-600 body-font">
+        <section id="components" className="text-gray-600 body-font">
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 justify-items-center">
                 {
                     featuredCategorys?.map((product) => (
@@ -36,7 +36,8 @@ const ProductsCategoryCard = ({ featuredCategorys }) => {
                                         </button>
                                     </div>
                                 </div>
-                            </div></Link>
+                            </div>
+                        </Link>
                     ))
                 }
             </div>

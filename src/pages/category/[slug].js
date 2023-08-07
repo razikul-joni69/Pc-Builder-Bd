@@ -16,24 +16,34 @@ const CatagorigedProduct = ({ data }) => {
 };
 export default CatagorigedProduct;
 
-export const getStaticPaths = async ({ params }) => {
-    const res = await fetch('http://localhost:3000/api/products')
+export const getStaticPaths = async (ctx) => {
+    const res = await fetch(`${process.env.BASE_URL}/api/products`)
     const data = await res.json();
-    const categories = Object.keys(data.data)
+    const categories = Object.keys(data.data);
 
-    // const paths = categories.map((post) => ({
-    //     params: { id: post.id },
-    // }))
+    const paths = categories.map((category) => ({
+        params: { slug: category },
+    }))
 
     return {
-        paths: [],
+        paths,
         fallback: false
     }
 }
 
+
 export const getStaticProps = async ({ params }) => {
+    // INFO: for local build
+    // if (typeof window === "undefined") {
+    //     return {
+    //         props: {
+    //             data: []
+    //         }
+    //     }
+    // }
+
     const getCategory = params?.slug;
-    const res = await fetch('http://localhost:3000/api/products')
+    const res = await fetch(`${process.env.BASE_URL}/api/products`)
     const data = await res.json();
 
     const categorizedProducts = data?.data[getCategory]

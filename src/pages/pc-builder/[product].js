@@ -15,7 +15,7 @@ const CatagorigedProduct = ({ data }) => {
 export default CatagorigedProduct;
 
 export const getServerSideProps = async ({ params }) => {
-    const res = await fetch('http://localhost:3000/api/products')
+    const res = await fetch(`${process.env.BASE_URL}/api/products`)
     const data = await res.json();
 
     return {

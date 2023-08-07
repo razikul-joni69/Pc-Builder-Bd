@@ -12,34 +12,36 @@ const PcBuilder = ({ data }) => {
     const { processor, motherboard, ram, powerSupply, storageDevice, monitor } = useSelector((state) => state?.pc_components?.components);
     return (
         <div>
-            <Title title="Pc Builder" subTitle="Build pc at your own choice and customization." />
+            <div className="pt-5">
+                <Title title="Pc Builder" subTitle="Build pc at your own choice and customization." />
+            </div>
             <div>
-                <div class="justify-center flex-1 max-w-6xl px-4 pt-6 mx-auto md:px-6">
-                    <div class="p-4 bg-white shadow-2xl rounded-xl mb-5">
-                        <div class="flex flex-wrap items-center justify-between space-x-2">
-                            <div class="flex items-center justify-center space-x-2 ">
-                                <div class="flex  flex-shrink-0 cursor-pointer">
+                <div className="justify-center flex-1 max-w-6xl px-4 pt-6 mx-auto md:px-6">
+                    <div className="p-4 bg-white shadow-2xl rounded-xl mb-5">
+                        <div className="flex flex-wrap items-center justify-between space-x-2">
+                            <div className="flex items-center justify-center space-x-2 ">
+                                <div className="flex  flex-shrink-0 cursor-pointer">
                                     <img src="https://img.icons8.com/?size=512&id=catq5R3dHFli&format=png" alt=""
-                                        class="object-fill w-16 h-16" />
+                                        className="object-fill w-16 h-16" />
                                 </div>
-                                <div class="block">
-                                    <div class="w-auto px-2 pb-2 ">
-                                        <div class="font-medium">
-                                            <div class="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
+                                <div className="block">
+                                    <div className="w-auto px-2 pb-2 ">
+                                        <div className="font-medium">
+                                            <div className="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
                                                 Processor
                                                 <small className="badge badge-info ml-2">required</small>
                                             </div>
                                         </div>
                                         {
                                             processor !== null && <>
-                                                <div class="text-lg font-semibold dark:text-gray-400">
+                                                <div className="text-lg font-semibold dark:text-gray-400">
                                                     <small>Processor Name: </small>
                                                     {
                                                         processor?.name
                                                     }
                                                 </div>
                                                 <div className="flex ">
-                                                    <div class="text-lg font-semibold dark:text-gray-400 mr-5">
+                                                    <div className="text-lg font-semibold dark:text-gray-400 mr-5">
                                                         <small>Processor Price: </small>$
                                                         {
                                                             processor?.price
@@ -65,32 +67,32 @@ const PcBuilder = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div class="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
-                    <div class="p-4 bg-white shadow-2xl rounded-xl mb-5">
-                        <div class="flex flex-wrap items-center justify-between space-x-2">
-                            <div class="flex items-center justify-center space-x-2 ">
-                                <div class="flex  flex-shrink-0 cursor-pointer">
+                <div className="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
+                    <div className="p-4 bg-white shadow-2xl rounded-xl mb-5">
+                        <div className="flex flex-wrap items-center justify-between space-x-2">
+                            <div className="flex items-center justify-center space-x-2 ">
+                                <div className="flex  flex-shrink-0 cursor-pointer">
                                     <img src="https://img.icons8.com/?size=512&id=axrp1Sa7gC3w&format=png" alt=""
-                                        class="object-fill w-16 h-16" />
+                                        className="object-fill w-16 h-16" />
                                 </div>
-                                <div class="block">
-                                    <div class="w-auto px-2 pb-2 ">
-                                        <div class="font-medium">
-                                            <div class="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
+                                <div className="block">
+                                    <div className="w-auto px-2 pb-2 ">
+                                        <div className="font-medium">
+                                            <div className="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
                                                 Motherboard
                                                 <small className="badge badge-info ml-2">required</small>
                                             </div>
                                         </div>
                                         {
                                             motherboard !== null && <>
-                                                <div class="text-lg font-semibold dark:text-gray-400">
+                                                <div className="text-lg font-semibold dark:text-gray-400">
                                                     <small>Processor Name: </small>
                                                     {
                                                         motherboard?.name
                                                     }
                                                 </div>
                                                 <div className="flex ">
-                                                    <div class="text-lg font-semibold dark:text-gray-400 mr-5">
+                                                    <div className="text-lg font-semibold dark:text-gray-400 mr-5">
                                                         <small>Processor Price: </small>$
                                                         {
                                                             motherboard?.price
@@ -116,32 +118,32 @@ const PcBuilder = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div class="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
-                    <div class="p-4 bg-white shadow-2xl rounded-xl mb-5">
-                        <div class="flex flex-wrap items-center justify-between space-x-2">
-                            <div class="flex items-center justify-center space-x-2 ">
-                                <div class="flex  flex-shrink-0 cursor-pointer">
+                <div className="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
+                    <div className="p-4 bg-white shadow-2xl rounded-xl mb-5">
+                        <div className="flex flex-wrap items-center justify-between space-x-2">
+                            <div className="flex items-center justify-center space-x-2 ">
+                                <div className="flex  flex-shrink-0 cursor-pointer">
                                     <img src="https://img.icons8.com/?size=512&id=q5UbUywCKwNr&format=png" alt=""
-                                        class="object-fill w-16 h-16" />
+                                        className="object-fill w-16 h-16" />
                                 </div>
-                                <div class="block">
-                                    <div class="w-auto px-2 pb-2 ">
-                                        <div class="font-medium">
-                                            <div class="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
+                                <div className="block">
+                                    <div className="w-auto px-2 pb-2 ">
+                                        <div className="font-medium">
+                                            <div className="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
                                                 Ram
                                                 <small className="badge badge-info ml-2">required</small>
                                             </div>
                                         </div>
                                         {
                                             ram !== null && <>
-                                                <div class="text-lg font-semibold dark:text-gray-400">
+                                                <div className="text-lg font-semibold dark:text-gray-400">
                                                     <small>Processor Name: </small>
                                                     {
                                                         ram?.name
                                                     }
                                                 </div>
                                                 <div className="flex ">
-                                                    <div class="text-lg font-semibold dark:text-gray-400 mr-5">
+                                                    <div className="text-lg font-semibold dark:text-gray-400 mr-5">
                                                         <small>Ram Price: </small>$
                                                         {
                                                             ram?.price
@@ -167,32 +169,32 @@ const PcBuilder = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div class="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
-                    <div class="p-4 bg-white shadow-2xl rounded-xl mb-5">
-                        <div class="flex flex-wrap items-center justify-between space-x-2">
-                            <div class="flex items-center justify-center space-x-2 ">
-                                <div class="flex  flex-shrink-0 cursor-pointer">
+                <div className="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
+                    <div className="p-4 bg-white shadow-2xl rounded-xl mb-5">
+                        <div className="flex flex-wrap items-center justify-between space-x-2">
+                            <div className="flex items-center justify-center space-x-2 ">
+                                <div className="flex  flex-shrink-0 cursor-pointer">
                                     <img src="https://img.icons8.com/?size=512&id=uC7fVJH9dwHG&format=png" alt=""
-                                        class="object-fill w-16 h-16" />
+                                        className="object-fill w-16 h-16" />
                                 </div>
-                                <div class="block">
-                                    <div class="w-auto px-2 pb-2 ">
-                                        <div class="font-medium">
-                                            <div class="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
+                                <div className="block">
+                                    <div className="w-auto px-2 pb-2 ">
+                                        <div className="font-medium">
+                                            <div className="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
                                                 Power Supply
                                                 <small className="badge badge-info ml-2">required</small>
                                             </div>
                                         </div>
                                         {
                                             powerSupply !== null && <>
-                                                <div class="text-lg font-semibold dark:text-gray-400">
+                                                <div className="text-lg font-semibold dark:text-gray-400">
                                                     <small>Power Supply Name: </small>
                                                     {
                                                         powerSupply?.name
                                                     }
                                                 </div>
                                                 <div className="flex ">
-                                                    <div class="text-lg font-semibold dark:text-gray-400 mr-5">
+                                                    <div className="text-lg font-semibold dark:text-gray-400 mr-5">
                                                         <small>Power Supply Price: </small>$
                                                         {
                                                             powerSupply?.price
@@ -218,32 +220,32 @@ const PcBuilder = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div class="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
-                    <div class="p-4 bg-white shadow-2xl rounded-xl mb-5">
-                        <div class="flex flex-wrap items-center justify-between space-x-2">
-                            <div class="flex items-center justify-center space-x-2 ">
-                                <div class="flex  flex-shrink-0 cursor-pointer">
+                <div className="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
+                    <div className="p-4 bg-white shadow-2xl rounded-xl mb-5">
+                        <div className="flex flex-wrap items-center justify-between space-x-2">
+                            <div className="flex items-center justify-center space-x-2 ">
+                                <div className="flex  flex-shrink-0 cursor-pointer">
                                     <img src="https://img.icons8.com/?size=512&id=vaQUFtPEp5nj&format=png" alt=""
-                                        class="object-fill w-16 h-16" />
+                                        className="object-fill w-16 h-16" />
                                 </div>
-                                <div class="block">
-                                    <div class="w-auto px-2 pb-2 ">
-                                        <div class="font-medium">
-                                            <div class="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
+                                <div className="block">
+                                    <div className="w-auto px-2 pb-2 ">
+                                        <div className="font-medium">
+                                            <div className="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
                                                 Storage Devices
                                                 <small className="badge badge-info ml-2">required</small>
                                             </div>
                                         </div>
                                         {
                                             storageDevice !== null && <>
-                                                <div class="text-lg font-semibold dark:text-gray-400">
+                                                <div className="text-lg font-semibold dark:text-gray-400">
                                                     <small>Storage Device Name: </small>
                                                     {
                                                         storageDevice?.name
                                                     }
                                                 </div>
                                                 <div className="flex ">
-                                                    <div class="text-lg font-semibold dark:text-gray-400 mr-5">
+                                                    <div className="text-lg font-semibold dark:text-gray-400 mr-5">
                                                         <small>Storage Device Price: </small>$
                                                         {
                                                             storageDevice?.price
@@ -269,32 +271,32 @@ const PcBuilder = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div class="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
-                    <div class="p-4 bg-white shadow-2xl rounded-xl mb-5">
-                        <div class="flex flex-wrap items-center justify-between space-x-2">
-                            <div class="flex items-center justify-center space-x-2 ">
-                                <div class="flex  flex-shrink-0 cursor-pointer">
+                <div className="justify-center flex-1 max-w-6xl px-4 mx-auto md:px-6">
+                    <div className="p-4 bg-white shadow-2xl rounded-xl mb-5">
+                        <div className="flex flex-wrap items-center justify-between space-x-2">
+                            <div className="flex items-center justify-center space-x-2 ">
+                                <div className="flex  flex-shrink-0 cursor-pointer">
                                     <img src="https://img.icons8.com/?size=512&id=rnDs41vgylGN&format=png" alt=""
-                                        class="object-fill w-16 h-16" />
+                                        className="object-fill w-16 h-16" />
                                 </div>
-                                <div class="block">
-                                    <div class="w-auto px-2 pb-2 ">
-                                        <div class="font-medium">
-                                            <div class="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
+                                <div className="block">
+                                    <div className="w-auto px-2 pb-2 ">
+                                        <div className="font-medium">
+                                            <div className="text-lg font-semibold dark:text-gray-400 uppercase hover:underline">
                                                 Monitor
                                                 <small className="badge badge-info ml-2">required</small>
                                             </div>
                                         </div>
                                         {
                                             monitor !== null && <>
-                                                <div class="text-lg font-semibold dark:text-gray-400">
+                                                <div className="text-lg font-semibold dark:text-gray-400">
                                                     <small>Monitor Name: </small>
                                                     {
                                                         monitor?.name
                                                     }
                                                 </div>
                                                 <div className="flex ">
-                                                    <div class="text-lg font-semibold dark:text-gray-400 mr-5">
+                                                    <div className="text-lg font-semibold dark:text-gray-400 mr-5">
                                                         <small>Monitor Price: </small>$
                                                         {
                                                             monitor?.price
@@ -321,14 +323,15 @@ const PcBuilder = ({ data }) => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-end md:px-32 pb-5">
+                <div className="flex justify-end md:px-32 pr-5 pb-5">
                     <button onClick={() => {
                         Swal.fire({
-                            position: 'top-end',
+                            position: 'center',
                             icon: 'success',
-                            title: 'Your Build Completed Successfully',
+                            title: 'Your Build Completed Successfull',
+                            text: "You successfully build your PC. Thank you for using our service",
                             showConfirmButton: false,
-                            timer: 2000
+                            timer: 5000
                         })
                         router.push('/')
                     }} className="btn btn-primary" disabled={processor === null || motherboard === null || ram === null || powerSupply === null || storageDevice === null || monitor === null}>Complete Build</button>
@@ -341,7 +344,7 @@ export default PcBuilder;
 
 
 export async function getServerSideProps(ctx) {
-    const res = await fetch('http://localhost:3000/api/products')
+    const res = await fetch(`${process.env.BASE_URL}/api/products`)
     const data = await res.json()
 
     return {

@@ -1,6 +1,7 @@
 import logo from "@/assets/images/logo.jpg";
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
+import Swal from "sweetalert2";
 
 const login = () => {
     const { data: user } = useSession();
@@ -11,7 +12,7 @@ const login = () => {
                 <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
                     <div>
                         <Image src={logo}
-                            className="w-32 mx-auto"  alt="logo"/>
+                            className="w-32 mx-auto" alt="logo" />
                     </div>
                     <div className="mt-6 flex flex-col items-center">
                         <h1 className="text-2xl xl:text-3xl font-extrabold">
@@ -67,11 +68,20 @@ const login = () => {
                             <div className="mx-auto max-w-xs">
                                 <input
                                     className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white"
-                                    type="email" placeholder="Email" />
+                                    type="email" placeholder="Email" disabled />
                                 <input
                                     className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
-                                    type="password" placeholder="Password" />
+                                    type="password" placeholder="Password" disabled />
                                 <button
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        Swal.fire({
+                                            icon: 'info',
+                                            title: 'Feature Not Implimented Yet!',
+                                            text: 'I will do it as soom as possible!',
+                                            timer: 5000
+                                        })
+                                    }}
                                     className="mt-5 tracking-wide font-semibold bg-indigo-500 text-gray-100 w-full py-4 rounded-lg hover:bg-indigo-700 transition-all duration-300 ease-in-out flex items-center justify-center focus:shadow-outline focus:outline-none">
                                     <svg className="w-6 h-6 -ml-2" fill="none" stroke="currentColor" strokeWidth="2"
                                         strokeLinecap="round" strokeLinejoin="round">

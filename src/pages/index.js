@@ -42,16 +42,6 @@ const Home = ({ data }) => {
 
 export default Home
 
-// export const getStaticPaths = async () => {
-
-
-//   return {
-//     paths: [],
-//     fallback: false
-//   }
-// }
-
-// TODO: change to getStaticProps
 export const getStaticProps = async (ctx) => {
 
   const res = await fetch(`${process.env.BASE_URL}/api/products`)

@@ -42,7 +42,6 @@ const ProductCard = ({ products }) => {
                             : "bg-[#cc0000] text-white"
                             } border border-gray-200 rounded-lg shadow-xl  p-5 dark:bg-gray-800 dark:border-gray-700`}
                     >
-                        <hr className="" />
                         <div className="relative">
                             <a className="relative" href="#">
                                 <img
@@ -64,12 +63,11 @@ const ProductCard = ({ products }) => {
                                 Category: <span className="badge dark:text-white badge-primary">{product?.category.toUpperCase()}</span>
                             </div>
                             <div className="flex items-center gap-1 text-[15px] dark:text-white">
-                                Availability: <span className="badge dark:text-white badge-primary">{product?.status}</span>
+                                Availability: <span className={`badge  dark:text-white ${product?.status !== "In Stock" ? "badge" : "badge-primary"} `}>{product?.status}</span>
                             </div>
                             <div className="flex items-center gap-1 text-[15px] dark:text-white">
                                 Average Rating: <span className="badge dark:text-white badge-primary">{product?.average_rating}</span>
                             </div>
-
                             <div className="dark:text-gray-200">
                                 {product?.description?.slice(0, 100)}
                             </div>

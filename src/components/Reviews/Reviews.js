@@ -1,4 +1,5 @@
 import { Rating } from "@smastrom/react-rating";
+import Swal from "sweetalert2";
 
 const Reviews = ({ reviews, rating, total_ratings }) => {
     return (
@@ -7,7 +8,7 @@ const Reviews = ({ reviews, rating, total_ratings }) => {
                 <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
                     <div className="p-6 mb-6 bg-gray-50 dark:bg-gray-900">
                         <h2 className="mb-6 text-xl font-semibold text-left font-gray-600 dark:text-gray-400">
-                            Ratings & Reviews</h2>
+                            Ratings & disabled Reviews</h2>
                         <div className="flex justify-start ">
                             <div
                                 className="flex items-center mb-2 space-x-2 text-3xl leading-none text-gray-600 dark:text-gray-400 ">
@@ -145,7 +146,15 @@ const Reviews = ({ reviews, rating, total_ratings }) => {
                                 <div className="flex justify-end text-xs font-medium dark:text-gray-400">14% </div>
                             </div>
                         </div>
-                        <div className="items-center ">
+                        <div onClick={(e) => {
+                            e.preventDefault();
+                            Swal.fire({
+                                icon: 'info',
+                                title: 'Feature not implemented yet!',
+                                text: 'I will do it as soon as possible!',
+                                timer: 5000
+                            })
+                        }} className="items-center ">
                             <a href="#" className="px-4 py-2 text-xs text-gray-100 bg-blue-500 hover:bg-blue-600 ">
                                 View all reviews</a>
                         </div>
@@ -156,14 +165,23 @@ const Reviews = ({ reviews, rating, total_ratings }) => {
                         <form action="" className="">
                             <div className="mb-6 ">
                                 <input type="text" placeholder="your email" required=""
-                                    className="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-100 border rounded dark:placeholder-gray-500 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800 " />
+                                    className="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-100 border rounded dark:placeholder-gray-500 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800 " disabled />
                             </div>
                             <div className="mb-6 ">
                                 <textarea type="message" placeholder="write a comment" required=""
-                                    className="block w-full px-4 leading-tight text-gray-700 bg-gray-100 border rounded dark:placeholder-gray-500 py-7 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800 "></textarea>
+                                    className="block w-full px-4 leading-tight text-gray-700 bg-gray-100 border rounded dark:placeholder-gray-500 py-7 dark:text-gray-400 dark:border-gray-800 dark:bg-gray-800 " disabled></textarea>
                             </div>
                             <div className="">
                                 <button
+                                    onClick={(e) => {
+                                        e.preventDefault();
+                                        Swal.fire({
+                                            icon: 'info',
+                                            title: 'Feature not implemented yet!',
+                                            text: 'I will do it as soon as possible!',
+                                            timer: 5000
+                                        })
+                                    }}
                                     className="px-4 py-2 text-xs font-medium text-gray-100 bg-blue-500 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-700">
                                     Submit comment
                                 </button>

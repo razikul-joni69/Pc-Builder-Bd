@@ -1,10 +1,23 @@
 import logo from "@/assets/images/logo.jpg";
 import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import Swal from "sweetalert2";
 
 const login = () => {
-    const { data: user } = useSession();
+    const { data: session } = useSession();
+    const router = useRouter();
+    const from = router?.query?.callbackUrl?.split("/")[3] || "/";
+    if (session?.user?.email) {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Login Successfull!',
+            text: 'You are successfully logged in into PCB-BD!',
+            showConfirmButton: true,
+            timer: 5000
+        })
+    }
 
     return (
         <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
@@ -22,7 +35,7 @@ const login = () => {
                             <div className="flex flex-col items-center">
                                 <button
                                     onClick={() => signIn("google", {
-                                        callbackUrl: "/"
+                                        callbackUrl: `/${from}`
                                     })}
                                     className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
                                     <div className="bg-white p-2 rounded-full">
@@ -46,7 +59,9 @@ const login = () => {
                                     </span>
                                 </button>
                                 <button
-                                    onClick={() => signIn("github")}
+                                    onClick={() => signIn("github", {
+                                        callbackUrl: `/${from}`
+                                    })}
                                     className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-indigo-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline mt-5">
                                     <div className="bg-white p-1 rounded-full">
                                         <svg className="w-6" viewBox="0 0 32 32">

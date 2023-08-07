@@ -15,7 +15,6 @@ export const componentSlice = createSlice({
     name: 'counter',
     initialState,
     reducers: {
-        // Array(7) ['processors', 'motherboards', 'rams', 'powerSupplies', 'storageDevices', 'monitors', 'accessories']
         processor: (state, action) => {
             state.components.processor = action.payload
         },
@@ -37,7 +36,6 @@ export const componentSlice = createSlice({
     },
 })
 
-// Action creators are generated for each case reducer function
 export const { processor, motherboard, ram, powerSupplie, storageDevice, monitor } = componentSlice.actions
 
 export default componentSlice.reducer

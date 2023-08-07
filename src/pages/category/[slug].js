@@ -31,7 +31,6 @@ export const getStaticPaths = async (ctx) => {
     }
 }
 
-
 export const getStaticProps = async ({ params }) => {
     // INFO: for local build
     // if (typeof window === "undefined") {

@@ -2,7 +2,7 @@
     "processors": [
         {
             "_id": "1",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584-920x614.jpg",
             "name": "Processor Model X",
             "category": "processors",
             "status": "In Stock",
@@ -41,7 +41,7 @@
         },
         {
             "_id": "2",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584-920x614.jpg",
             "name": "Processor Model Y",
             "category": "processors",
             "status": "Out of Stock",
@@ -75,7 +75,7 @@
         },
         {
             "_id": "3",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584-920x614.jpg",
             "name": "Processor Model Z",
             "category": "processors",
             "status": "In Stock",
@@ -109,7 +109,7 @@
         },
         {
             "_id": "4",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584-920x614.jpg",
             "name": "Processor Model A",
             "category": "processors",
             "status": "In Stock",
@@ -143,7 +143,7 @@
         },
         {
             "_id": "5",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.trustedreviews.com/wp-content/uploads/sites/54/2021/03/Intel-Rocker-Lake-2-e1615908186584-920x614.jpg",
             "name": "Processor Model B",
             "category": "processors",
             "status": "In Stock",
@@ -179,7 +179,7 @@
     "motherboards": [
         {
             "_id": "6",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://hips.hearstapps.com/hmg-prod/images/next-gen-motherboards-1630001748.jpg?crop=0.502xw:1.00xh;0.251xw,0&resize=1200:*",
             "name": "Motherboard Model X",
             "category": "motherboards",
             "status": "In Stock",
@@ -217,7 +217,7 @@
         },
         {
             "_id": "7",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.pcworld.com/wp-content/uploads/2023/04/motherboard-shot-100898287-orig.jpg?quality=50&strip=allhttps://dummyimage.com/500x600",
             "name": "Motherboard Model Y",
             "category": "motherboards",
             "status": "Out of Stock",
@@ -255,7 +255,7 @@
         },
         {
             "_id": "8",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.pcworld.com/wp-content/uploads/2023/04/motherboard-shot-100898287-orig.jpg?quality=50&strip=allhttps://dummyimage.com/500x600",
             "name": "Motherboard Model Z",
             "category": "motherboards",
             "status": "In Stock",
@@ -293,7 +293,7 @@
         },
         {
             "_id": "9",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://res.cloudinary.com/highereducation/images/f_auto,fl_lossy,q_auto/v1662583494/BestColleges.com/close-up-of-person-holding-computer-chip/close-up-of-person-holding-computer-chip.jpg",
             "name": "Motherboard Model A",
             "category": "motherboards",
             "status": "In Stock",
@@ -333,7 +333,7 @@
     "rams": [
         {
             "_id": "10",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://media.istockphoto.com/id/92434128/photo/computer-ram.jpg?s=612x612&w=0&k=20&c=hC-HAdO9jDsfWWTwc9f2s6zqCiaWyQ-vqt-8pHMGS5A=",
             "name": "RAM Model X",
             "category": "rams",
             "status": "In Stock",
@@ -367,7 +367,7 @@
         },
         {
             "_id": "11",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://media.istockphoto.com/id/92434128/photo/computer-ram.jpg?s=612x612&w=0&k=20&c=hC-HAdO9jDsfWWTwc9f2s6zqCiaWyQ-vqt-8pHMGS5A=",
             "name": "RAM Model Y",
             "category": "rams",
             "status": "Out of Stock",
@@ -401,7 +401,7 @@
         },
         {
             "_id": "12",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://media.istockphoto.com/id/92434128/photo/computer-ram.jpg?s=612x612&w=0&k=20&c=hC-HAdO9jDsfWWTwc9f2s6zqCiaWyQ-vqt-8pHMGS5A=",
             "name": "RAM Model Z",
             "category": "rams",
             "status": "In Stock",
@@ -435,7 +435,7 @@
         },
         {
             "_id": "13",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://media.istockphoto.com/id/92434128/photo/computer-ram.jpg?s=612x612&w=0&k=20&c=hC-HAdO9jDsfWWTwc9f2s6zqCiaWyQ-vqt-8pHMGS5A=",
             "name": "RAM Model A",
             "category": "rams",
             "status": "In Stock",
@@ -471,7 +471,7 @@
     "powerSupplies": [
         {
             "_id": "14",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.lifewire.com/thmb/Gb9Gx1CUa04i_-cq35BvBTEPdL0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/power-supply-5aba984fba617700376b877f.PNG",
             "name": "Power Supply Model X",
             "category": "powerSupplies",
             "status": "In Stock",
@@ -505,7 +505,7 @@
         },
         {
             "_id": "15",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.lifewire.com/thmb/Gb9Gx1CUa04i_-cq35BvBTEPdL0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/power-supply-5aba984fba617700376b877f.PNG",
             "name": "Power Supply Model Y",
             "category": "powerSupplies",
             "status": "Out of Stock",
@@ -539,7 +539,7 @@
         },
         {
             "_id": "16",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.lifewire.com/thmb/Gb9Gx1CUa04i_-cq35BvBTEPdL0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/power-supply-5aba984fba617700376b877f.PNG",
             "name": "Power Supply Model Z",
             "category": "powerSupplies",
             "status": "In Stock",
@@ -573,7 +573,7 @@
         },
         {
             "_id": "17",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.lifewire.com/thmb/Gb9Gx1CUa04i_-cq35BvBTEPdL0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/power-supply-5aba984fba617700376b877f.PNG",
             "name": "Power Supply Model A",
             "category": "powerSupplies",
             "status": "In Stock",
@@ -609,7 +609,7 @@
     "storageDevices": [
         {
             "_id": "18",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.computerlounge.co.nz/data/media/images/blog//SSD-vs-HDD-images.jpg",
             "name": "SSD Model X",
             "category": "storageDevices",
             "status": "In Stock",
@@ -644,7 +644,7 @@
         },
         {
             "_id": "19",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.computerlounge.co.nz/data/media/images/blog//SSD-vs-HDD-images.jpg",
             "name": "HDD Model Y",
             "category": "storageDevices",
             "status": "Out of Stock",
@@ -677,7 +677,7 @@
         },
         {
             "_id": "20",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.computerlounge.co.nz/data/media/images/blog//SSD-vs-HDD-images.jpg",
             "name": "SSD Model Z",
             "category": "storageDevices",
             "status": "In Stock",
@@ -712,7 +712,7 @@
         },
         {
             "_id": "21",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.computerlounge.co.nz/data/media/images/blog//SSD-vs-HDD-images.jpg",
             "name": "HDD Model A",
             "category": "storageDevices",
             "status": "In Stock",
@@ -747,7 +747,7 @@
     "monitors": [
         {
             "_id": "22",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://i.pcmag.com/imagery/roundups/05ersXu1oMXozYJa66i9GEo-38..v1657319390.jpg",
             "name": "Monitor Model X",
             "category": "monitors",
             "status": "In Stock",
@@ -783,7 +783,7 @@
         },
         {
             "_id": "23",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://i.pcmag.com/imagery/roundups/05ersXu1oMXozYJa66i9GEo-38..v1657319390.jpg",
             "name": "Monitor Model Y",
             "category": "monitors",
             "status": "Out of Stock",
@@ -819,7 +819,7 @@
         },
         {
             "_id": "24",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://i.pcmag.com/imagery/roundups/05ersXu1oMXozYJa66i9GEo-38..v1657319390.jpg",
             "name": "Monitor Model Z",
             "category": "monitors",
             "status": "In Stock",
@@ -855,7 +855,7 @@
         },
         {
             "_id": "25",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://i.pcmag.com/imagery/roundups/05ersXu1oMXozYJa66i9GEo-38..v1657319390.jpg",
             "name": "Monitor Model A",
             "category": "monitors",
             "status": "In Stock",
@@ -893,7 +893,7 @@
     "accessories": [
         {
             "_id": "26",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://i.pcmag.com/imagery/articles/00Iy7r4lqzdcLM9vUdFIZoN-25.fit_lim.v1628272383.jpg",
             "name": "GPU Model X",
             "category": "accessories",
             "status": "In Stock",
@@ -928,7 +928,7 @@
         },
         {
             "_id": "27",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://assetsio.reedpopcdn.com/g502x_f9QuuM8.jpeg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
             "name": "Gaming Mouse Model Y",
             "category": "accessories",
             "status": "In Stock",
@@ -962,7 +962,7 @@
         },
         {
             "_id": "28",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://www.cnet.com/a/img/resize/bea196b706cc3962cd1cf7804c491115cad4e1ee/hub/2019/08/20/db2c8f57-f31e-4995-99e3-50f2c7ce49e3/gaming-keyboards-200-01.jpg?auto=webp&fit=crop&height=1200&width=1200",
             "name": "Mechanical Keyboard Model Z",
             "category": "accessories",
             "status": "In Stock",
@@ -995,7 +995,7 @@
         },
         {
             "_id": "29",
-            "img": "https://dummyimage.com/500x600",
+            "img": "https://assetsio.reedpopcdn.com/best-pc-gaming-headset-our-recommended-wired-and-wireless-options-1622734103593.jpg?width=1200&height=1200&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
             "name": "Gaming Headset Model A",
             "category": "accessories",
             "status": "In Stock",

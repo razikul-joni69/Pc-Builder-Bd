@@ -10,7 +10,7 @@ const ProductsCategoryCard = ({ featuredCategorys }) => {
                         <Link key={product?._id} href={`/category/${product?.category}`}>
                             <div className="w-full p-4">
                                 <div className="bg-gray-100 p-6 rounded-lg">
-                                    <img className="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content" />
+                                    <img className="h-40 rounded w-full object-cover object-center mb-6" src={product?.img} alt="content" />
                                     <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">Product Category</h3>
                                     <h2 className="text-lg text-gray-900 font-medium title-font mb-4">{product?.category}</h2>
                                     <p className="leading-relaxed text-base">{product?.description}</p>

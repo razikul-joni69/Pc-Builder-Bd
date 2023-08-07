@@ -1,9 +1,20 @@
 import logo from "@/assets/images/logo.jpg";
-import { signIn } from "next-auth/react";
+import { signIn, useSession } from "next-auth/react";
 import Image from "next/image";
 import Swal from "sweetalert2";
 
 const Register = () => {
+    const { data: session } = useSession();
+    if (session?.user?.email) {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Register Successfull!',
+            text: 'You are successfully registered in into PCB-BD!',
+            showConfirmButton: true,
+            timer: 5000
+        })
+    }
     return (
         <div>
             <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
@@ -44,7 +55,6 @@ const Register = () => {
                                             Register with Google
                                         </span>
                                     </button>
-
                                     <button
                                         onClick={() => signIn("github", {
                                             callbackUrl: "/"
@@ -61,7 +71,6 @@ const Register = () => {
                                         </span>
                                     </button>
                                 </div>
-
                                 <div className="my-12 border-b text-center">
                                     <div
                                         className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">

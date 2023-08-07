@@ -1,6 +1,7 @@
 import Reviews from "@/components/Reviews/Reviews";
 import Title from "@/components/Title/Title";
 import { Rating } from "@smastrom/react-rating";
+import Swal from "sweetalert2";
 
 const ProductDetails = ({ data: product }) => {
     return (
@@ -120,7 +121,15 @@ const ProductDetails = ({ data: product }) => {
                                 <p>{product?.description}</p>
                             </div>
                             <div className="my-4 border-t"></div>
-                            <div className="flex flex-wrap items-center mb-6">
+                            <div onClick={(e) => {
+                                e.preventDefault();
+                                Swal.fire({
+                                    icon: 'info',
+                                    title: 'Feature not implemented yet!',
+                                    text: 'I will do it as soon as possible!',
+                                    timer: 5000
+                                })
+                            }} className="flex flex-wrap items-center mb-6">
                                 <div className="mb-4 mr-4 lg:mb-0">
                                     <div className="w-28">
                                         <div className="relative flex flex-row w-full h-10 bg-transparent rounded-lg">
@@ -146,7 +155,15 @@ const ProductDetails = ({ data: product }) => {
                                     Add to cart
                                 </a>
                             </div>
-                            <div className="flex gap-4 mb-6">
+                            <div onClick={(e) => {
+                                e.preventDefault();
+                                Swal.fire({
+                                    icon: 'info',
+                                    title: 'Feature not implemented yet!',
+                                    text: 'I will do it as soon as possible!',
+                                    timer: 5000
+                                })
+                            }} className="flex gap-4 mb-6">
                                 <a href="#" className="w-full px-4 py-3 text-center text-gray-100 bg-blue-600 border border-transparent dark:border-gray-700 hover:border-blue-500 hover:text-blue-700 hover:bg-blue-100 dark:text-gray-400 dark:bg-gray-700 dark:hover:bg-gray-900 rounded-xl">
                                     Buy now</a>
                             </div>

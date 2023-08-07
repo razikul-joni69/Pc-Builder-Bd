@@ -10,18 +10,17 @@ const Layout = ({ children }) => {
     const handleWarning = (e) => {
         e.preventDefault();
         Swal.fire({
-            icon: 'warning',
+            icon: 'info',
             title: 'Feature not implemented yet!',
             text: 'I will do it as soon as possible!',
             timer: 5000
         })
-
     }
 
     return (
         <div data-theme="light">
-            <div className='backdrop-blur-xl sticky top-0 z-50 md:container md:mx-auto border-b-2 w-full m-0 p-0'>
-                <div className="navbar p-0">
+            <div className='backdrop-blur-xl sticky top-0 z-50 border-b-2'>
+                <div className="navbar md:container md:mx-auto">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -108,7 +107,17 @@ const Layout = ({ children }) => {
                                                 <span className="badge">New</span>
                                             </a>
                                         </li>
-                                        <li><button className='btn-warning' onClick={() => signOut()}>Logout</button></li>
+                                        <li><button className='btn-warning' onClick={() => {
+                                            signOut()
+                                            Swal.fire({
+                                                position: 'top-end',
+                                                icon: 'success',
+                                                title: 'Logout Successfully!',
+                                                text: 'You are successfully Logged in out from PCB-BD!',
+                                                showConfirmButton: true,
+                                                timer: 5000
+                                            })
+                                        }}>Logout</button></li>
                                     </ul>
                                 </div>
                             </>
@@ -150,10 +159,19 @@ const Layout = ({ children }) => {
                             <label className="label">
                                 <span className="label-text">Enter your email address</span>
                             </label>
-                            <div className="relative">
-                                <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" />
-                                <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
-                            </div>
+                            <form onSubmit={(e) => {
+                                e.preventDefault();
+                                Swal.fire({
+                                    icon: 'success',
+                                    title: 'Successfylly subscribed!',
+                                    text: 'You are now subscribed. You will recieve our newsletter!',
+                                    timer: 5000
+                                })
+                                e.target.reset()
+                            }} className="relative">
+                                <input type="email" placeholder="username@site.com" className="input input-bordered w-full pr-16" required />
+                                <button type='submit' className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                 </div>

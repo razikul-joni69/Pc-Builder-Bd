@@ -330,7 +330,7 @@ const PcBuilder = ({ data }) => {
                             icon: 'success',
                             title: 'Your Build Completed Successfull',
                             text: "You successfully build your PC. Thank you for using our service",
-                            showConfirmButton: false,
+                            showConfirmButton: true,
                             timer: 5000
                         })
                         router.push('/')
